@@ -6,7 +6,7 @@
 /*   By: jaialons <jaialons@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 14:13:55 by jaialons          #+#    #+#             */
-/*   Updated: 2025/10/15 19:04:28 by jaialons         ###   ########.fr       */
+/*   Updated: 2025/10/15 21:04:20 by jaialons         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,24 @@ int	count_digits(int i)
 {
 	int	count;
 
+	if (i == 0)
+		return (1);
 	count = 0;
+	while (i != 0)
+	{
+		i = i / 10;
+		count++;
+	}
+	return (count);
+}
+
+int	count_udigits(unsigned int i)
+{
+	int	count;
+
+	count = 0;
+	if (i == 0)
+		return (1);
 	while (i != 0)
 	{
 		i = i / 10;

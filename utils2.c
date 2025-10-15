@@ -6,7 +6,7 @@
 /*   By: jaialons <jaialons@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 14:38:11 by jaialons          #+#    #+#             */
-/*   Updated: 2025/10/15 19:04:22 by jaialons         ###   ########.fr       */
+/*   Updated: 2025/10/15 21:02:55 by jaialons         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	format_unbr(va_list args)
 	ft_putunbr(unbr);
 	if (unbr == 0)
 		return (1);
-	return (count_digits(unbr));
+	return (count_udigits(unbr));
 }
 
 int	format_hex(va_list args, char format)

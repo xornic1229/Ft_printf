@@ -6,7 +6,7 @@
 /*   By: jaialons <jaialons@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:57:11 by jaialons          #+#    #+#             */
-/*   Updated: 2025/10/15 19:06:52 by jaialons         ###   ########.fr       */
+/*   Updated: 2025/10/15 21:03:57 by jaialons         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ int		ft_putptr(void *ptr);
 void	ft_putnbr(int n);
 void	ft_putunbr(unsigned int n);
 int		count_digits(int i);
+int		count_udigits(unsigned int i);
 
 #endif
